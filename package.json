@@ -1,0 +1,12 @@
+{
+  "name": "read-ne-resources",
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": "LinusU/read-ne-resources",
+  "scripts": {
+    "test": "standard"
+  },
+  "devDependencies": {
+    "standard": "^10.0.3"
+  }
+}
