@@ -1,3 +1,5 @@
+const toDataView = require('to-data-view')
+
 const types = new Map([
   [1, 'CURSOR'],
   [2, 'BITMAP'],
@@ -21,22 +23,6 @@ const types = new Map([
   [23, 'HTML'],
   [24, 'MANIFEST']
 ])
-
-/**
- * @param {ArrayBuffer|Uint8Array} data
- * @returns {DataView}
- */
-function toDataView (data) {
-  if (data instanceof Uint8Array) {
-    return new DataView(data.buffer, data.byteOffset, data.byteLength)
-  }
-
-  if (data instanceof ArrayBuffer) {
-    return new DataView(data)
-  }
-
-  throw new TypeError('Expected `data` to be an ArrayBuffer or Uint8Array')
-}
 
 /**
  * @typedef Resouce

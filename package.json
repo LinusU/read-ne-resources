@@ -6,6 +6,9 @@
   "scripts": {
     "test": "standard"
   },
+  "dependencies": {
+    "to-data-view": "^1.0.0"
+  },
   "devDependencies": {
     "standard": "^10.0.3"
   }
